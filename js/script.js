@@ -33,19 +33,20 @@ function showPage(list,page){
 /**Else, the students that matched the searchvalue will display */
    } else {
     for(i=0;i<list.length;i++){
+      let student = list[i];
          if(i>=startIndex && i<endIndex){
             studentItems= `<li class="student-item cf">
             <div class="student-details">
-               <img class="avatar" src="${data[i].picture.thumbnail}" alt="Profile Picture">
-               <h3>${data[i].name.title} ${data[i].name.first} ${data[i].name.last}</h3>
-               <span class="email">${data[i].email}</span>
+               <img class="avatar" src="${student.picture.thumbnail}" alt="Profile Picture">
+               <h3>${student.name.title} ${student.name.first} ${student.name.last}</h3>
+               <span class="email">${student.email}</span>
             </div>
             <div class="joined-details">
-               <span class="date">${data[i].registered.date}</span>
+               <span class="date">${student.registered.date}</span>
             </div>
          </li>
             `;
-            studentList.insertAdjacentHTML('beforeend', studentItems);        
+            studentList.insertAdjacentHTML('beforeend', studentItems);      
        }
       }
    }
