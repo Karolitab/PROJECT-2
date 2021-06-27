@@ -1,0 +1,1 @@
+This is my second project of my treehouse techdegree where a list of students is displayed and you can search for specific student whether using the searchbar or changing between the pagination buttons.
