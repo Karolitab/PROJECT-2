@@ -8,7 +8,7 @@ FSJS Project 2 - Data Pagination and Filtering
  * Global functions
  */
 
-const itemsPerPage = 10;
+const itemsPerPage = 9;
 let studentList = document.querySelector('.student-list'); /** This variable contains the ul where the students items are displayed*/
 let linkList = document.querySelector(".link-list"); /** This variable contains the ul where the students items are displayed*/
 const header = document.querySelector('.header');
